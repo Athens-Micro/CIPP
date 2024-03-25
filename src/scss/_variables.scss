@@ -76,15 +76,15 @@
 // scss-docs-end colors-map
 
 // fusv-disable
-$primary-dark: rgb(226, 92, 9) !default;
-$primary-base: rgba(247, 127, 0) !default;
-$primary-50: rgba(247, 128, 0, 0.514) !default;
-$primary-25: rgba(247, 128, 0, 0.219) !default;
+$primary-dark: rgb(153, 0, 0) !default; // Adjusted to #670000
+$primary-base: rgba(204, 0, 0) !default; // Adjusted to cc0000
+$primary-50: rgba(204, 0, 0, 0.514) !default; // Adjusted to cc0000 with 50% opacity
+$primary-25: rgba(204, 0, 0, 0.219) !default; // Adjusted to cc0000 with 25% opacity
 
-$secondary-dark: rgb(1, 42, 65) !default;
-$secondary-base: rgba(0, 48, 73) !default;
-$secondary-50: rgba(0, 47, 73, 0.479) !default;
-$secondary-25: rgba(0, 47, 73, 0.205) !default;
+$secondary-dark: rgb(85, 0, 0) !default;
+$secondary-base: rgba(103, 0, 0) !default;
+$secondary-50: rgba(103, 0, 0, 0.479) !default;
+$secondary-25: rgba(103, 0, 0, 0.205) !default;
 
 //$link-color: var(--cui-link-color) !default;
 $link-decoration: underline !default;
@@ -104,8 +104,8 @@ $search-group-header-bg: #eeeeee;
 // If you want to change these variables please also update the _themes.scss file.
 $cyberdrain-primary: #dd3333; // Orange
 $cyberdrain-primary-rgb: rgb(221 51 51); // Orange
-$cyberdrain-secondary: #003049; // Prussian Blue
-$cyberdrain-secondary-rgb: rgb(0 48 73); // Prussian Blue
+$cyberdrain-secondary: #670000; // Prussian Blue
+$cyberdrain-secondary-rgb: rgb(103 0 0); // Prussian Blue
 $cyberdrain-lighter: #fff; // White
 $cyberdrain-light: #f4f5f6; // Cultured
 $cyberdrain-light-rgb: rgb(244 245 246); // Cultured
