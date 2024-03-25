@@ -705,9 +705,6 @@ export default function CippTable({
               <CDropdownToggle
                 className="btn btn-primary btn-sm m-1"
                 size="sm"
-                style={{
-                  backgroundColor: '#f88c1a',
-                }}
               >
                 <FontAwesomeIcon icon={faColumns} />
               </CDropdownToggle>
@@ -734,9 +731,6 @@ export default function CippTable({
             <CDropdownToggle
               className="btn btn-primary btn-sm m-1"
               size="sm"
-              style={{
-                backgroundColor: '#f88c1a',
-              }}
             >
               <FontAwesomeIcon icon={faFilePdf} />
             </CDropdownToggle>
@@ -765,9 +759,6 @@ export default function CippTable({
               <CDropdownToggle
                 className="btn btn-primary btn-sm m-1"
                 size="sm"
-                style={{
-                  backgroundColor: '#f88c1a',
-                }}
               >
                 <FontAwesomeIcon icon={faFileCsv} />
               </CDropdownToggle>
@@ -805,9 +796,6 @@ export default function CippTable({
             <CDropdownToggle
               className="btn btn-primary btn-sm m-1"
               size="sm"
-              style={{
-                backgroundColor: '#f88c1a',
-              }}
             >
               Actions
             </CDropdownToggle>
