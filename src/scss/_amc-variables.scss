@@ -1,6 +1,8 @@
 :root {
     --cyberdrain-primary: #a30000; // AMC Red
-    --cyberdrain-primary-rgb: rgb(204, 0, 0); // AMC Red
+    --cyberdrain-primary-rgb: rgb(163, 0, 0); // AMC Red
+    --cyberdrain-light: #cc0000; // AMC Red
+    --cyberdrain-light-rgb: rgb(204, 0, 0); // AMC Red
     --cyberdrain-secondary: #670000; // AMC Dark Red
     --cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
     --cui-link-color: var(--cyberdrain-primary);
@@ -8,8 +10,9 @@
   }
   
   // fusv-disable
-  $primary-dark: rgb(153, 0, 0) !default; // Adjusted to #670000
-  $primary-base: rgba(204, 0, 0) !default; // Adjusted to a30000
+  $primary-dark: rgb(103, 0, 0) !default; // Adjusted to #670000
+  $primary-base: rgba(163, 0, 0) !default; // Adjusted to #a30000
+  $primary-light: rgba(204,0 ,0) !default; // Adjusted to #cc0000
   $primary-50: rgba(
     204,
     0,
@@ -30,7 +33,7 @@
   
   // If you want to change these variables please also update the _themes.scss file.
   $cyberdrain-primary: #a30000; // AMC Red
-  $cyberdrain-primary-rgb: rgb(204, 0, 0); // AMC Red
+  $cyberdrain-primary-rgb: rgb(163, 0, 0); // AMC Red
   $cyberdrain-secondary: #670000; // AMC Dark Red
   $cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
   
@@ -118,7 +121,7 @@
     --cui-btn-border-color: var(
       --cyberdrain-secondary-rgb
     ); /* Matches AMC Dark Red */
-    --cui-btn-hover-color: var(--cyberdrain-secondary); /* Matches AMC Dark Red */
+    --cui-btn-hover-color: var(--cyberdrain-light); /* Matches AMC Dark Red */
     --cui-btn-hover-bg: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-hover-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-focus-shadow-rgb: 210, 108, 3; /* Note: This is not a valid CSS value, assuming it's defined elsewhere */
@@ -139,7 +142,7 @@
   
   .btn-secondary {
     --cui-btn-color: var(--cyberdrain-secondary-rgb);
-    --cui-btn-bg: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
+    --cui-btn-bg: var(--cyberdrain-secondary-rgb); /* Matches AMC Red */
     --cui-btn-border-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
     --cui-btn-hover-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-hover-bg: var(
@@ -163,10 +166,10 @@
   }
   
   .btn-ghost-primary {
-    --cui-btn-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-hover-bg: var(--cyberdrain-primary); /* Matches AMC Red */
+    --cui-btn-color: var(--cyberdrain-primary-rgb); /* Matches AMC Dark Red */
+    --cui-btn-hover-bg: var(--cyberdrain-secondary); /* Matches AMC Red */
     --cui-btn-hover-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-hover-color: var(--cyberdrain-primary); /* Matches AMC Red */
+    --cui-btn-hover-color: var(--cyberdrain-light); /* Matches AMC Red */
     --cui-btn-active-bg: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-active-border-color: var(
       --cyberdrain-secondary-rgb
