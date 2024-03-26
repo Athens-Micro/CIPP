@@ -43,6 +43,8 @@
   $cyberdrain-primary-rgb: rgb(163, 0, 0); // AMC Red
   $cyberdrain-secondary: #670000; // AMC Dark Red
   $cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
+  $cyberdrain-accent-blue-rgb: var($cyberdrain-secondary);
+  $cyberdrain-accent-blue: var($cyberdrain-secondary-rgb);
   
   [data-theme="cyberdrain"] {
     // Custom AMC Color
