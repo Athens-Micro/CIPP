@@ -1,10 +1,10 @@
 :root {
     --cui-color-orange: #cc0000;
-  
     --cyberdrain-primary: #cc0000; // AMC Red
     --cyberdrain-primary-rgb: rgb(204, 0, 0); // AMC Red
     --cyberdrain-secondary: #670000; // AMC Dark Red
     --cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
+    --cui-link-color: #cc0000;
   }
   
   // fusv-disable
@@ -24,3 +24,16 @@
   $cyberdrain-secondary: #670000; // AMC Dark Red
   $cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
   
+  [data-theme='cyberdrain'] {
+    // Custom AMC Color
+    --cui-color-orange: #cc0000;
+  }
+  
+  [data-theme='impact'] {
+    // Custom AMC Color
+    --cui-color-orange: #cc0000;
+  }
+
+  .btn-primary {
+    background-color: var(--cyberdrain-primary) !important;
+  }
