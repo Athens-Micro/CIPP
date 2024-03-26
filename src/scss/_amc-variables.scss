@@ -6,10 +6,14 @@
     --cyberdrain-secondary: #670000; // AMC Dark Red
     --cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
     --cui-link-color: #888;
+    --cui-link-color-rgb: rgb(136, 136, 136);
+    --cui-link-hover-color-rgb: var(--cyberdrain-primary-light-rgb);
     --cui-color-orange: var(--cyberdrain-primary);
     --cui-input-focus-border-color: var(--cyberdrain-secondary);
     --cui-input-focus-bg: #444;
     --cui-input-focus-color: var(--cyberdrain-light);
+    --cyberdrain-accent-blue-rgb: var(--cyberdrain-secondary);
+    --cyberdrain-accent-blue: var(--cyberdrain-secondary-rgb);
   }
   
   // fusv-disable
@@ -47,6 +51,9 @@
     --cui-header-active-color: var(--cyberdrain-primary);
     --cui-options-card-border-color: var(--cyberdrain-primary-light);
     --cui-dropdown-link-hover-bg: var(--cyberdrain-primary);
+    --cui-input-focus-border-color: var(--cyberdrain-secondary);
+    --cui-input-focus-bg: #444;
+    --cui-input-focus-color: var(--cyberdrain-light);
   }
   
   [data-theme="impact"] {
@@ -56,6 +63,9 @@
     --cui-header-active-color: var(--cyberdrain-primary);
     --cui-options-card-border-color: var(--cyberdrain-primary-light);
     --cui-dropdown-link-hover-bg: var(--cyberdrain-primary);
+    --cui-input-focus-border-color: var(--cyberdrain-secondary);
+    --cui-input-focus-bg: #444;
+    --cui-input-focus-color: var(--cyberdrain-light);
   }
   
   // Calculate variants with the same lightness as the existing colors
