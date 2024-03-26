@@ -1,0 +1,26 @@
+:root {
+    --cui-color-orange: #cc0000;
+  
+    --cyberdrain-primary: #cc0000; // AMC Red
+    --cyberdrain-primary-rgb: rgb(204, 0, 0); // AMC Red
+    --cyberdrain-secondary: #670000; // AMC Dark Red
+    --cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
+  }
+  
+  // fusv-disable
+  $primary-dark: rgb(153, 0, 0) !default; // Adjusted to #670000
+  $primary-base: rgba(204, 0, 0) !default; // Adjusted to cc0000
+  $primary-50: rgba(204, 0, 0, 0.514) !default; // Adjusted to cc0000 with 50% opacity
+  $primary-25: rgba(204, 0, 0, 0.219) !default; // Adjusted to cc0000 with 25% opacity
+  
+  $secondary-dark: rgb(85, 0, 0) !default;
+  $secondary-base: rgba(103, 0, 0) !default;
+  $secondary-50: rgba(103, 0, 0, 0.479) !default;
+  $secondary-25: rgba(103, 0, 0, 0.205) !default;
+  
+  // If you want to change these variables please also update the _themes.scss file.
+  $cyberdrain-primary: #cc0000; // AMC Red
+  $cyberdrain-primary-rgb: rgb(204, 0, 0); // AMC Red
+  $cyberdrain-secondary: #670000; // AMC Dark Red
+  $cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
+  
