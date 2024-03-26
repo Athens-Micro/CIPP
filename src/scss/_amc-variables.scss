@@ -7,12 +7,15 @@
     --cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
     --cui-link-color: #888;
     --cui-color-orange: var(--cyberdrain-primary);
+    --cui-input-focus-border-color: var(--cyberdrain-secondary);
+    --cui-input-focus-bg: #444;
+    --cui-input-focus-color: var(--cyberdrain-light);
   }
   
   // fusv-disable
   $primary-dark: rgb(103, 0, 0) !default; // Adjusted to #670000
   $primary-base: rgba(163, 0, 0) !default; // Adjusted to #a30000
-  $primary-base-light: rgba(204,0 ,0) !default; // Adjusted to #cc0000
+  $primary-base-light: rgba(204, 0, 0) !default; // Adjusted to #cc0000
   $primary-50: rgba(
     204,
     0,
@@ -72,7 +75,9 @@
     --cui-btn-border-color: var(
       --cyberdrain-secondary-rgb
     ); /* Matches AMC Dark Red */
-    --cui-btn-hover-color: var(--cyberdrain-primary-light); /* Matches AMC Dark Red */
+    --cui-btn-hover-color: var(
+      --cyberdrain-primary-light
+    ); /* Matches AMC Dark Red */
     --cui-btn-hover-bg: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-hover-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-focus-shadow-rgb: 210, 108, 3; /* Note: This is not a valid CSS value, assuming it's defined elsewhere */
@@ -134,9 +139,7 @@
   
   .btn-ghost-secondary {
     --cui-btn-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Red */
-    --cui-btn-hover-bg: var(
-      --cyberdrain-primary-rgb
-    ); /* Matches AMC Dark Red */
+    --cui-btn-hover-bg: var(--cyberdrain-primary-rgb); /* Matches AMC Dark Red */
     --cui-btn-hover-border-color: var(
       --cyberdrain-secondary-rgb
     ); /* Matches AMC Dark Red */
@@ -149,16 +152,36 @@
     --cui-btn-disabled-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
     --cui-btn-shadow: rgba(103, 0, 0, 0.5); /* Adjusted to match AMC Dark Red */
   }
+
+  .form-control:focus {
+    color: var(--cui-input-focus-color, var(--cui-body-color));
+    background-color: var(--cui-input-focus-bg, var(--cui-body-bg));
+    border-color: var(--cui-input-focus-border-color, #fbbf80);
+    outline: 0;
+    box-shadow: inset 0 1px 2px rgba(104,0,0,.075),0 0 0 .25rem rgba(247,0,0,.25)
+  }
+
   .form-check-input:focus {
-    border-color: #B42F2F;
-}
-
-.form-check-input:checked {
+    border-color: #b42f2f;
+  }
+  
+  .form-check-input:checked {
     background-color: var(--cyberdrain-primary);
     border-color: var(--cyberdrain-primary-light);
-}
-
-.form-check-input[type=checkbox]:indeterminate {
+  }
+  
+  .form-check-input[type="checkbox"]:indeterminate {
     background-color: var(--cyberdrain-primary);
     border-color: var(--cyberdrain-primary-light);
-}
+  }
+
+  .sponsors {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Adding transition for smooth animation */
+    margin-left: 150px;
+  }
+
+  .sponsors:hover {
+    opacity: 1;
+  }
