@@ -1,5 +1,4 @@
 :root {
-
     --cyberdrain-primary: #a30000; // AMC Red
     --cyberdrain-primary-rgb: rgb(204, 0, 0); // AMC Red
     --cyberdrain-secondary: #670000; // AMC Dark Red
@@ -11,8 +10,18 @@
   // fusv-disable
   $primary-dark: rgb(153, 0, 0) !default; // Adjusted to #670000
   $primary-base: rgba(204, 0, 0) !default; // Adjusted to a30000
-  $primary-50: rgba(204, 0, 0, 0.514) !default; // Adjusted to a30000 with 50% opacity
-  $primary-25: rgba(204, 0, 0, 0.219) !default; // Adjusted to a30000 with 25% opacity
+  $primary-50: rgba(
+    204,
+    0,
+    0,
+    0.514
+  ) !default; // Adjusted to a30000 with 50% opacity
+  $primary-25: rgba(
+    204,
+    0,
+    0,
+    0.219
+  ) !default; // Adjusted to a30000 with 25% opacity
   
   $secondary-dark: rgb(85, 0, 0) !default;
   $secondary-base: rgba(103, 0, 0) !default;
@@ -25,17 +34,17 @@
   $cyberdrain-secondary: #670000; // AMC Dark Red
   $cyberdrain-secondary-rgb: rgb(103, 0, 0); // AMC Dark Red
   
-  [data-theme='cyberdrain'] {
+  [data-theme="cyberdrain"] {
     // Custom AMC Color
     --cui-color-orange: #a30000;
   }
   
-  [data-theme='impact'] {
+  [data-theme="impact"] {
     // Custom AMC Color
     --cui-color-orange: #a30000;
   }
-
-// Calculate variants with the same lightness as the existing colors
+  
+  // Calculate variants with the same lightness as the existing colors
   .sidebar-brand .sidebar-brand-full {
     padding-left: 20px;
     margin: 15px;
@@ -45,117 +54,145 @@
   .btn-primary {
     background-color: var(--cyberdrain-primary) !important;
   }
-
-/*  .btn-primary {
-    --cui-btn-color: #000015;
-    --cui-btn-bg: rgb(247, 127, 0);
-    --cui-btn-border-color: rgb(247, 127, 0);
-    --cui-btn-hover-color: rgba(44, 56, 74, .95);
-    --cui-btn-hover-bg: #f89226;
-    --cui-btn-hover-border-color: #f88c1a;
-    --cui-btn-focus-shadow-rgb: 210, 108, 3;
-    --cui-btn-active-color: rgba(44, 56, 74, .95);
-    --cui-btn-active-bg: #f99933;
-    --cui-btn-active-border-color: #f88c1a;
-    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
-    --cui-btn-disabled-color: #000015;
-    --cui-btn-disabled-bg: rgb(247, 127, 0);
-    --cui-btn-disabled-border-color: rgb(247, 127, 0)
-}
-
-.btn-secondary {
-    --cui-btn-color: rgba(255, 255, 255, .87);
-    --cui-btn-bg: rgb(0, 48, 73);
-    --cui-btn-border-color: rgb(0, 48, 73);
-    --cui-btn-hover-color: rgba(255, 255, 255, .87);
-    --cui-btn-hover-bg: #264f64;
-    --cui-btn-hover-border-color: #1a455b;
-    --cui-btn-focus-shadow-rgb: 31, 73, 95;
-    --cui-btn-active-color: rgba(255, 255, 255, .87);
-    --cui-btn-active-bg: #33596d;
-    --cui-btn-active-border-color: #1a455b;
-    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
-    --cui-btn-disabled-color: rgba(255, 255, 255, .87);
-    --cui-btn-disabled-bg: rgb(0, 48, 73);
-    --cui-btn-disabled-border-color: rgb(0, 48, 73)
-}
-
-.btn-ghost-primary {
-    --cui-btn-color: rgb(247, 127, 0);
-    --cui-btn-hover-bg: #f89226;
-    --cui-btn-hover-border-color: #f88c1a;
-    --cui-btn-hover-color: rgba(44, 56, 74, .95);
-    --cui-btn-active-bg: #f99933;
-    --cui-btn-active-border-color: #f88c1a;
-    --cui-btn-active-color: rgba(44, 56, 74, .95);
-    --cui-btn-disabled-color: rgb(247, 127, 0);
-    --cui-btn-shadow: rgba(247, 127, 0, .5)
-}
-
-.btn-ghost-secondary {
-    --cui-btn-color: rgb(0, 48, 73);
-    --cui-btn-hover-bg: #264f64;
-    --cui-btn-hover-border-color: #1a455b;
-    --cui-btn-hover-color: rgba(255, 255, 255, .87);
-    --cui-btn-active-bg: #33596d;
-    --cui-btn-active-border-color: #1a455b;
-    --cui-btn-active-color: rgba(255, 255, 255, .87);
-    --cui-btn-disabled-color: rgb(0, 48, 73);
-    --cui-btn-shadow: rgba(0, 48, 73, .5)
-} */
-.btn-primary {
+  
+  /*  .btn-primary {
+      --cui-btn-color: #000015;
+      --cui-btn-bg: rgb(247, 127, 0);
+      --cui-btn-border-color: rgb(247, 127, 0);
+      --cui-btn-hover-color: rgba(44, 56, 74, .95);
+      --cui-btn-hover-bg: #f89226;
+      --cui-btn-hover-border-color: #f88c1a;
+      --cui-btn-focus-shadow-rgb: 210, 108, 3;
+      --cui-btn-active-color: rgba(44, 56, 74, .95);
+      --cui-btn-active-bg: #f99933;
+      --cui-btn-active-border-color: #f88c1a;
+      --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
+      --cui-btn-disabled-color: #000015;
+      --cui-btn-disabled-bg: rgb(247, 127, 0);
+      --cui-btn-disabled-border-color: rgb(247, 127, 0)
+  }
+  
+  .btn-secondary {
+      --cui-btn-color: rgba(255, 255, 255, .87);
+      --cui-btn-bg: rgb(0, 48, 73);
+      --cui-btn-border-color: rgb(0, 48, 73);
+      --cui-btn-hover-color: rgba(255, 255, 255, .87);
+      --cui-btn-hover-bg: #264f64;
+      --cui-btn-hover-border-color: #1a455b;
+      --cui-btn-focus-shadow-rgb: 31, 73, 95;
+      --cui-btn-active-color: rgba(255, 255, 255, .87);
+      --cui-btn-active-bg: #33596d;
+      --cui-btn-active-border-color: #1a455b;
+      --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
+      --cui-btn-disabled-color: rgba(255, 255, 255, .87);
+      --cui-btn-disabled-bg: rgb(0, 48, 73);
+      --cui-btn-disabled-border-color: rgb(0, 48, 73)
+  }
+  
+  .btn-ghost-primary {
+      --cui-btn-color: rgb(247, 127, 0);
+      --cui-btn-hover-bg: #f89226;
+      --cui-btn-hover-border-color: #f88c1a;
+      --cui-btn-hover-color: rgba(44, 56, 74, .95);
+      --cui-btn-active-bg: #f99933;
+      --cui-btn-active-border-color: #f88c1a;
+      --cui-btn-active-color: rgba(44, 56, 74, .95);
+      --cui-btn-disabled-color: rgb(247, 127, 0);
+      --cui-btn-shadow: rgba(247, 127, 0, .5)
+  }
+  
+  .btn-ghost-secondary {
+      --cui-btn-color: rgb(0, 48, 73);
+      --cui-btn-hover-bg: #264f64;
+      --cui-btn-hover-border-color: #1a455b;
+      --cui-btn-hover-color: rgba(255, 255, 255, .87);
+      --cui-btn-active-bg: #33596d;
+      --cui-btn-active-border-color: #1a455b;
+      --cui-btn-active-color: rgba(255, 255, 255, .87);
+      --cui-btn-disabled-color: rgb(0, 48, 73);
+      --cui-btn-shadow: rgba(0, 48, 73, .5)
+  } */
+  .btn-primary {
     --cui-btn-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-bg: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-border-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
+    --cui-btn-border-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
     --cui-btn-hover-color: var(--cyberdrain-secondary); /* Matches AMC Dark Red */
     --cui-btn-hover-bg: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-hover-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-focus-shadow-rgb: 210, 108, 3; /* Note: This is not a valid CSS value, assuming it's defined elsewhere */
     --cui-btn-active-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-active-bg: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-active-border-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
+    --cui-btn-active-border-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
     --cui-btn-disabled-color: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-disabled-bg: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-disabled-border-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-}
-
-.btn-secondary {
+    --cui-btn-disabled-bg: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
+    --cui-btn-disabled-border-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
+  }
+  
+  .btn-secondary {
     --cui-btn-color: var(--cyberdrain-secondary-rgb);
     --cui-btn-bg: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
     --cui-btn-border-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
     --cui-btn-hover-color: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-hover-bg: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-hover-border-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
+    --cui-btn-hover-bg: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
+    --cui-btn-hover-border-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
     --cui-btn-focus-shadow-rgb: 31, 73, 95; /* Note: This is not a valid CSS value, assuming it's defined elsewhere */
     --cui-btn-active-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-active-bg: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-active-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
+    --cui-btn-active-border-color: var(
+      --cyberdrain-primary
+    ); /* Matches AMC Red */
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
     --cui-btn-disabled-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-disabled-bg: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-disabled-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
-}
-
-.btn-ghost-primary {
+    --cui-btn-disabled-border-color: var(
+      --cyberdrain-primary
+    ); /* Matches AMC Red */
+  }
+  
+  .btn-ghost-primary {
     --cui-btn-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
     --cui-btn-hover-bg: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-hover-border-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-hover-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-active-bg: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-active-border-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
+    --cui-btn-active-border-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
     --cui-btn-active-color: var(--cyberdrain-primary); /* Matches AMC Red */
-    --cui-btn-disabled-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-shadow: rgba(204, 0, 0, .5); /* Adjusted to match AMC Red */
-}
-
-.btn-ghost-secondary {
+    --cui-btn-disabled-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
+    --cui-btn-shadow: rgba(204, 0, 0, 0.5); /* Adjusted to match AMC Red */
+  }
+  
+  .btn-ghost-secondary {
     --cui-btn-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
-    --cui-btn-hover-bg: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
-    --cui-btn-hover-border-color: var(--cyberdrain-secondary-rgb); /* Matches AMC Dark Red */
+    --cui-btn-hover-bg: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
+    --cui-btn-hover-border-color: var(
+      --cyberdrain-secondary-rgb
+    ); /* Matches AMC Dark Red */
     --cui-btn-hover-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-active-bg: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
-    --cui-btn-active-border-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
+    --cui-btn-active-border-color: var(
+      --cyberdrain-primary-rgb
+    ); /* Matches AMC Red */
     --cui-btn-active-color: var(--cyberdrain-primary); /* Matches AMC Red */
     --cui-btn-disabled-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
-    --cui-btn-shadow: rgba(103, 0, 0, .5); /* Adjusted to match AMC Dark Red
+    --cui-btn-shadow: rgba(103, 0, 0, 0.5); /* Adjusted to match AMC Dark Red */
+  }
+  
