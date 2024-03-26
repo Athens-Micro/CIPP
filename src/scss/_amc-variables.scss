@@ -149,4 +149,16 @@
     --cui-btn-disabled-color: var(--cyberdrain-primary-rgb); /* Matches AMC Red */
     --cui-btn-shadow: rgba(103, 0, 0, 0.5); /* Adjusted to match AMC Dark Red */
   }
-  
+  .form-check-input:focus {
+    border-color: #B42F2F;
+}
+
+.form-check-input:checked {
+    background-color: var(--cyberdrain-primary);
+    border-color: var(--cyberdrain-primary-light);
+}
+
+.form-check-input[type=checkbox]:indeterminate {
+    background-color: var(--cyberdrain-primary);
+    border-color: var(--cyberdrain-primary-light);
+}
