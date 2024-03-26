@@ -725,32 +725,32 @@ export default function CippTable({
             </CDropdown>,
           ])
         }
+
+        defaultActions.push([
+          <CDropdown key={'pdf-selector'} className="me-2" variant="input-group">
+            <CDropdownToggle
+              className="btn btn-primary btn-sm m-1"
+              size="sm"
+            >
+              <FontAwesomeIcon icon={faFilePdf} />
+            </CDropdownToggle>
+            <CDropdownMenu>
+              {dataKeys() && (
+                <>
+                  <ExportPDFButton
+                    key="export-pdf-action-visible"
+                    pdfData={filtered}
+                    pdfHeaders={columns}
+                    pdfSize="A4"
+                    reportName={reportName}
+                    nameText="Export Visible Columns"
+                  />
+                </>
+              )}
+            </CDropdownMenu>
+          </CDropdown>,
+        ])
       }
-      defaultActions.push([
-        <CDropdown key={'pdf-selector'} className="me-2" variant="input-group">
-          <CDropdownToggle
-            className="btn btn-primary btn-sm m-1"
-            size="sm"
-          >
-            <FontAwesomeIcon icon={faFilePdf} />
-          </CDropdownToggle>
-          <CDropdownMenu>
-            {dataKeys() && (
-              <>
-                <ExportPDFButton
-                  key="export-pdf-action-visible"
-                  pdfData={filtered}
-                  pdfHeaders={columns}
-                  pdfSize="A4"
-                  reportName={reportName}
-                  nameText="Export Visible Columns"
-                />
-              </>
-            )}
-          </CDropdownMenu>
-        </CDropdown>,
-      ])
-    }
 
       if (!disableCSVExport) {
         defaultActions.push([
@@ -788,7 +788,7 @@ export default function CippTable({
           </>,
         ])
       }
-      
+    }
     if (selectedRows && actionsList) {
       defaultActions.push([
         <>
