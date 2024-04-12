@@ -58,8 +58,11 @@
     --cui-options-card-border-color: var(--cyberdrain-primary-light);
     --cui-dropdown-link-hover-bg: var(--cyberdrain-primary);
     --cui-input-focus-border-color: var(--cyberdrain-secondary);
-    --cui-input-focus-bg: #444;
+    --cui-input-focus-bg: var(--cui-body-bg);
     --cui-input-focus-color: var(--cyberdrain-light);
+    .form-control:focus {
+        box-shadow: inset 0 1px 2px rgba(104,0,0,.075),0 0 0 .25rem rgba(247,0,0,.60);
+    }
   }
   
   [data-theme="impact"] {
