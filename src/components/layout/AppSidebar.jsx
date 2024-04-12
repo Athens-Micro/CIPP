@@ -12,14 +12,11 @@ import { AppSidebarNav } from 'src/components/layout'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
 import navigation from 'src/_nav'
-<<<<<<< HEAD
 import { useAuthCheck } from '../utilities/CippauthCheck'
 import routes from 'src/routes'
 import { useRouteNavCompare } from 'src/hooks/useRouteNavCompare'
 import { useNavFavouriteCheck } from 'src/hooks/useNavFavouriteCheck'
-=======
 import AMClogolight from 'src/assets/images/athens-micro-r2-logo-outlined.png'
->>>>>>> 45fb11ea8d2022917c01e7015d82e8917f0718b5
 
 const AppSidebar = () => {
   const i =
