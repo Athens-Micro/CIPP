@@ -16,7 +16,7 @@ import { useAuthCheck } from '../utilities/CippauthCheck'
 import routes from 'src/routes'
 import { useRouteNavCompare } from 'src/hooks/useRouteNavCompare'
 import { useNavFavouriteCheck } from 'src/hooks/useNavFavouriteCheck'
-import AMClogolight from 'src/assets/images/athens-micro-r2-White.png'
+import AMClogolight from 'src/assets/images/athens-micro-r2-logo-white.png'
 
 const AppSidebar = () => {
   const i =
